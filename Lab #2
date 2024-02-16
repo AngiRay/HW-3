@@ -1,0 +1,69 @@
+title: "HW #3 - Lab 2"
+author: "Angie Raymundo"
+date: "2024-02-15"
+output: html_document
+---
+
+Study Group: Hanfei, Chamiqua
+
+Possible Protocal #1 
+```{r}
+one_roll <- 1
+sim_rolls <- sample(1:6, one_roll, replace = TRUE)
+
+if_come_up_6 <- as.numeric(sin_sim_rolls == 1)
+mean(if_come_up_6)
+
+if_come_up_6_vec <- as.numeric(sim_rolls_vec == 1)
+mean(if_come_up_6_vec)
+```
+
+```{r}
+if_come_up_6 <- (sin_sim_rolls == 1)
+```
+
+```{r}
+data.frame(sin_sim_rolls)
+```
+If the dice landed on a 6, it would be viewed as unfair. For one die, the probability would be 1/6. For both dice, it would be 1/36. 
+
+
+Possible Protocal #2 
+```{r}
+twenty_rolls <- 20
+sim_rolls <- sample(1:6, twenty_rolls, replace = TRUE)
+
+tw_if_come_up_6 <- as.numeric(twenty_rolls == 6)
+mean(tw_if_come_up_6)
+
+tw_if_come_up_6_vec <- as.numeric(twenty_rolls == 6)
+mean(tw_if_come_up_6_vec)
+```
+For a die to land on 6 after 20 times would be 1/6 times 20 = 3.33, or for dice (1/36 times 20 = 0.55%). 6 being landed up to 3.33% or 0.55% would be fair. 
+
+
+Possible Protocal #3 
+```{r}
+how_many_rolls <- 100
+hund_rolls <- sample(1:6, how_many_rolls, replace = TRUE)
+
+hund_if_come_up_6 <- as.numeric(hund_rolls == 6)
+mean(if_come_up_6)
+
+```
+Similarily to PP2, for a die to land on 6 after 100 rolls, it would be 1/6 times 100 = 16.67 and for both dice (1/36 times 100) = 2.78. 6 being landed on, up to 16.67% for one or 2.78% would be fair. 
+
+
+Experimental Protocal 
+```{r}
+EP_rolls <- 20
+EPsim_rolls <- sample(1:6, one_roll, replace = TRUE)
+
+if_come_up_5 <- as.numeric(EPsim_rolls == 5)
+mean(if_come_up_5)
+
+if_come_up_5_vec <- as.numeric(EPsim_rolls == 6)
+mean(if_come_up_5_vec)
+```
+
+To land on 5, 1/6 = 16.7%
